@@ -32,6 +32,12 @@ function formatGreeting(user) {
     // Sonar Issue: Use a template literal instead of string concatenation.
     var greeting = "Hello, " + user.name + "! Welcome back.";
 
+    // Sonar Issue: Braces should be used around the statement.
+    if (user.role == role)  // Sonar Issue: Use '===' instead of '=='.
+        return true;
+    else
+        return false;
+
     return greeting;
 }
 
