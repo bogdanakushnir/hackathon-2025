@@ -25,8 +25,8 @@ function checkAccess(user, role, options) {
 function formatGreeting(user) {
     // Sonar Issue: 'unusedMessage' is declared but its value is never read.
     var unusedMessage = "This variable is not needed.";
-    let unusedMessage2 = "This variable is not needed.";
-    var unusedMessage3 = "This variable is not needed.";
+    var unusedMessage2 = "This variable is not needed.";
+    let unusedMessage3 = "This variable is not needed.";
     
     // Sonar Issue: Use 'const' instead of 'var' because 'greeting' is never reassigned.
     // Sonar Issue: Use a template literal instead of string concatenation.
