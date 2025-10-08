@@ -27,6 +27,7 @@ function formatGreeting(user) {
     var unusedMessage = "This variable is not needed.";
     var unusedMessage2 = "This variable is not needed.";
     var unusedMessage3 = "This variable is not needed.";
+    var unusedMessage4 = "This variable is not needed.";
     
     // Sonar Issue: Use 'const' instead of 'var' because 'greeting' is never reassigned.
     // Sonar Issue: Use a template literal instead of string concatenation.
