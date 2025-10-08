@@ -25,10 +25,18 @@ function checkAccess(user, role, options) {
 function formatGreeting(user) {
     // Sonar Issue: 'unusedMessage' is declared but its value is never read.
     var unusedMessage = "This variable is not needed.";
+    var unusedMessage2 = "This variable is not needed.";
+    var unusedMessage3 = "This variable is not needed.";
     
     // Sonar Issue: Use 'const' instead of 'var' because 'greeting' is never reassigned.
     // Sonar Issue: Use a template literal instead of string concatenation.
     var greeting = "Hello, " + user.name + "! Welcome back.";
+
+    // Sonar Issue: Braces should be used around the statement.
+    if (user.role == role)  // Sonar Issue: Use '===' instead of '=='.
+        return true;
+    else
+        return false;
 
     return greeting;
 }
