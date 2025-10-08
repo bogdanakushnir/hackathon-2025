@@ -10,6 +10,7 @@
  */
 // Sonar Issue: 'options' is declared but its value is never read.
 function checkAccess(user, role, options) {
+        let unusedMessage = "This variable is not needed.";
     // Sonar Issue: This 'if' statement is redundant and can be simplified.
     // Sonar Issue: Braces should be used around the statement.
     if (user.role == role)  // Sonar Issue: Use '===' instead of '=='.
@@ -25,10 +26,16 @@ function checkAccess(user, role, options) {
 function formatGreeting(user) {
     // Sonar Issue: 'unusedMessage' is declared but its value is never read.
     var unusedMessage = "This variable is not needed.";
+    let unusedMessage2 = "This variable is not needed.";
+    let unusedMessage3 = "This variable is not needed.";
+    let unusedMessage4 = "This variable is not needed.";
     
     // Sonar Issue: Use 'const' instead of 'var' because 'greeting' is never reassigned.
     // Sonar Issue: Use a template literal instead of string concatenation.
     var greeting = "Hello, " + user.name + "! Welcome back.";
+
+    // Sonar Issue: Braces should be used around the statement.
+    return user.role == role;
 
     return greeting;
 }
@@ -40,5 +47,13 @@ const currentUser = {
     role: 'admin'
 };
 
+
+
 console.log(formatGreeting(currentUser));
 console.log('Does user have admin access?', checkAccess(currentUser, 'admin'));
+
+
+
+
+
+
