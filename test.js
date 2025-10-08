@@ -10,6 +10,7 @@
  */
 // Sonar Issue: 'options' is declared but its value is never read.
 function checkAccess(user, role, options) {
+        var unusedMessage = "This variable is not needed.";
     // Sonar Issue: This 'if' statement is redundant and can be simplified.
     // Sonar Issue: Braces should be used around the statement.
     if (user.role == role)  // Sonar Issue: Use '===' instead of '=='.
@@ -48,6 +49,8 @@ const currentUser = {
     name: 'Alex',
     role: 'admin'
 };
+
+
 
 console.log(formatGreeting(currentUser));
 console.log('Does user have admin access?', checkAccess(currentUser, 'admin'));
